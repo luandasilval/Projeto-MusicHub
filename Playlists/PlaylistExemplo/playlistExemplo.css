@@ -1,0 +1,158 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #03050b;
+  background-image: radial-gradient(circle at 50% 45%, #4a1380 0%, #150628 40%, #03050b 80%);
+  background-attachment: fixed;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.cabecalho {
+  width: 100%;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+}
+
+.texto-logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.3px;
+}
+
+
+.conteudo-principal {
+  width: 100%;
+  max-width: 650px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-pagina {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+
+.caixinha-adicionar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding-right: 8px;
+}
+
+.botao-adicionar {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4px;
+  transition: opacity 0.2s, transform 0.2s;
+  opacity: 0.9;
+}
+
+.botao-adicionar:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
+.lista-musicas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item-musica {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.info-musica {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.caixinha-imagem {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.imagem-capa {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nome-musica {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+.acoes-musica {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.botao-opcao,
+.botao-remover {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 4px;
+  transition: opacity 0.2s, transform 0.2s;
+  opacity: 0.85;
+}
+
+.botao-opcao:hover,
+.botao-remover:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
