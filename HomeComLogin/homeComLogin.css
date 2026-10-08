@@ -24,6 +24,17 @@ body,html {
     width: 100%;
    
 }
+.divisao{
+    display: flex;
+    
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
 
 /* CABEÇALHO */
 
@@ -261,3 +272,165 @@ body,html {
     display: flex;
     gap: 10px;
 }
+
+/* CONTEUDO DA PAGINA */
+.conteudo{
+    flex: 1;
+    padding: 0px 10px 0px 10px;
+    max-width: 100%;
+
+    
+    
+}
+.banner{
+    position: relative;
+    width: 100%;
+  
+}
+.banner img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    height: 400px;
+ }
+ .conteudo-banner{
+    position: absolute;
+    bottom: 80px; /* Distancia a parte de baixo*/
+    left: 25px;/* Distancia a esqueerda*/
+    z-index: 2;/* Garante que fique por cima de imgHomeComLogin*/
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    
+ }
+ .titulo{
+    display: flex;
+    flex-direction: column;
+     color: var(--cor-texto);
+    background-color: transparent;
+ }
+.titulo h2{
+    
+    background-color: transparent;
+    font-size:70px;
+}
+.titulo p{
+    background-color: transparent;
+    font-size: 20px;
+}
+.btn-ouvir{
+    display: flex;
+    width: 166px;
+    height: 48px;
+    font-size: 16px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.musicas{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 0 0;
+    gap: 20px;
+}
+.artista{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+.carrossel {
+   position: relative;
+}
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.seta-esquerda {
+    left: 10px;
+}
+.seta-direita {
+    right: 10px;
+}
+.carrossel:hover .seta {
+    opacity: 1;
+}
+.seta:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+.cards{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    min-width: 0;
+    overflow-x: auto;
+  
+  
+    scrollbar-width: none;
+    
+}
+
+.card{
+    
+    display: flex;
+    flex: 0 0 160px ;
+    width: 180px;
+    scroll-snap-align: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.card h3{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card img{
+    width: 180px;
+  
+}
+
+.em-alta{
+        display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+.sugestoes{
+        display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+.albuns{
+        display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+
