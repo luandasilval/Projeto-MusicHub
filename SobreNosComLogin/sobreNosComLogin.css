@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --cor-destaque: #6229D4;
+    --cor-texto: #FFFFFF;
+    --cor-secundaria: #D9D9D9;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* CABEÇALHO */
+
+.cabecalho a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.cabecalho h2 {
+    color: var(--cor-texto);
+    font-size: 30px;
+}
+
+.cabecalho span {
+    color: var(--cor-destaque);
+}
+
+.cabecalho .logo-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabecalho .logo-cabecalho img {
+    height: 60px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.cabecalho .navegacao #voltar {
+    border: none;
+    border-radius: 25px;
+
+    background-color: var(--cor-texto);
+
+    padding: 10px 35px;
+
+    outline: none;
+
+    font-size: 25px;
+
+}
+
+.cabecalho .navegacao #inscrever {
+    font-size: 25px;
+    align-items: center;
+}
+
+.cabecalho .navegacao #inscrever:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho .navegacao #voltar:hover {
+    cursor: pointer;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    transform: translateY(-3px);
+
+}
