@@ -434,3 +434,72 @@ body,html {
     color: var(--cor-texto);
 }
 
+/* FOOTER */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 50px 100px;
+    color: var(--cor-texto);
+    align-items: center;
+    
+}
+.conteudo-rodape{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    
+}
+.logo-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-rodape img{
+    height: 90px;
+}
+.informacoes{
+    display: flex;
+    gap: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+.empresa{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+.sub-informacoes{
+    display: flex;
+    flex-direction: column;
+}
+.rodape span{
+    background-color: aliceblue;
+    height: 150px;
+    width: 3px;
+    border-radius: 10px;
+}
+.info-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff60;
+    padding: 10px 0 0 0;
+   
+}
+
+.apps-contato{
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+    padding: 10px;
+}
