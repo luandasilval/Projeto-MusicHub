@@ -163,3 +163,36 @@ body {
 .banner-secundario img {
     height: 600px;
 }
+
+/* INFORMAÇÃO */
+
+.alinhamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 70px;
+    text-align: center;
+    
+    color: var(--cor-texto);
+}
+
+.informacao .icones {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.informacao .icones img {
+    text-align: center;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.informacao .icones h3 {
+    font-size: 30px;
+}
+
+.informacao .icones p {
+    font-size: 20px;
+}
