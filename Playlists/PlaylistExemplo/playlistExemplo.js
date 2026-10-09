@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const listaMusicas = document.querySelector('.lista-musicas');
     const btnAdicionar = document.querySelector('.botao-adicionar');
 
-    // Capa de substituição em SVG (funciona sempre, sem depender de internet ou arquivos locais)
+    
     const capaPadraoSVG = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><rect width='100%' height='100%' fill='%234a1380'/><circle cx='30' cy='30' r='12' fill='%23150628'/><path d='M26 22v16l12-8z' fill='%23ffffff'/></svg>";
 
-    // Lista de opções de capas locais
+    // opções de capas 
     const opcoesCapas = [
         "../../ImgsPlaylists/ImagemB.png",
         "../../ImgsPlaylists/ImagemC.png",
         "../../ImgsPlaylists/ImagemD.png"
     ];
 
-    // Músicas iniciais
+    
     let musicas = [
         { id: 1, nome: "Tal música 1", imagem: "../../ImgsPlaylists/ImagemB.png" },
         { id: 2, nome: "Tal música 2", imagem: "../../ImgsPlaylists/ImagemC.png" },
