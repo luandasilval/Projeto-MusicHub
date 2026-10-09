@@ -2,23 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const listaPlaylists = document.querySelector(".lista-playlists");
     const botaoAdicionar = document.querySelector(".botao-adicionar");
 
-    /* ===================================================
-       1. REMOVER / EXCLUIR PLAYLIST (LIXEIRA)
-       =================================================== */
+
     if (listaPlaylists) {
         listaPlaylists.addEventListener("click", (e) => {
-            // Verifica se o clique foi no botão de excluir (ou no ícone da lixeira)
+            // ve se o clique foi no botão da lixeira
             const botaoExcluir = e.target.closest(".botao-excluir");
 
             if (botaoExcluir) {
                 const itemPlaylist = botaoExcluir.closest(".item-playlist");
                 const nomePlaylist = itemPlaylist ? itemPlaylist.querySelector(".nome-playlist").textContent : "esta playlist";
 
-                // Confirmação antes de deletar
+                
                 const confirmar = confirm(`Tem certeza que deseja excluir a "${nomePlaylist}"?`);
 
                 if (confirmar && itemPlaylist) {
-                    // Animação de saída
+                    // animação 
                     itemPlaylist.style.transition = "all 0.3s ease";
                     itemPlaylist.style.opacity = "0";
                     itemPlaylist.style.transform = "translateX(30px)";
@@ -31,25 +29,19 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        /* ===================================================
-           2. NAVEGAÇÃO / CLIQUE NA PLAYLIST
-           =================================================== */
         listaPlaylists.addEventListener("click", (e) => {
             const infoPlaylist = e.target.closest(".info-playlist");
 
             if (infoPlaylist) {
                 const nomePlaylist = infoPlaylist.querySelector(".nome-playlist").textContent;
-                // Exemplo de redirecionamento ou ação ao clicar na playlist
+             
                 alert(`Abrindo "${nomePlaylist}"...`);
-                // Para redirecionar para a página da playlist, use:
-                // window.location.href = `Playlist.html?nome=${encodeURIComponent(nomePlaylist)}`;
+               
             }
         });
     }
 
-    /* ===================================================
-       3. ADICIONAR NOVA PLAYLIST
-       =================================================== */
+ //adc nova playlist
     if (botaoAdicionar && listaPlaylists) {
         botaoAdicionar.addEventListener("click", () => {
             const nomeNovaPlaylist = prompt("Digite o nome da nova playlist:");
@@ -73,14 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     </button>
                 `;
 
-                // Remove mensagem de lista vazia caso exista
+                // tira mensagem de lista vazia  se tiverr
                 const mensagemVazia = document.querySelector(".mensagem-vazia");
                 if (mensagemVazia) mensagemVazia.remove();
 
-                // Adiciona no topo da lista
+                
                 listaPlaylists.prepend(novoItem);
 
-                // Animação de entrada
+                // Animação 
                 requestAnimationFrame(() => {
                     novoItem.style.opacity = "1";
                     novoItem.style.transform = "translateY(0)";
@@ -89,11 +81,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /* ===================================================
-       FUNÇÕES AUXILIARES
-       =================================================== */
+    
 
-    // Exibe mensagem caso todas as playlists sejam excluídas
+
     function verificarListaVazia() {
         const itens = document.querySelectorAll(".item-playlist");
         if (itens.length === 0 && !document.querySelector(".mensagem-vazia")) {
@@ -108,16 +98,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Proteção contra injeção de HTML/Scripts no prompt
-    function escapeHtml(string) {
-        return String(string).replace(/[&<>"']/g, (s) => {
-            return {
-                "&": "&amp;",
-                "<": "&lt;",
-                ">": "&gt;",
-                '"': "&quot;",
-                "'": "&#39;"
-            }[s];
-        });
-    }
 });
