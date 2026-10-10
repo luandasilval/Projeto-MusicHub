@@ -1,0 +1,406 @@
+/* main */
+
+body {
+    min-height: 100vh;
+
+    background: radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent) #05070c;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.conteudo {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo img {
+    height: 110px;
+}
+
+/* Área Login */
+
+.login h1 {
+    text-align: center;
+}
+
+.login p {
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #000000;
+
+    width: 50%;
+
+    border-radius: 30px;
+
+    padding: 50px 100px 50px 100px;
+
+    gap: 20px;
+
+}
+
+
+/* CABEÇALHO DO LOGIN */
+
+.cabecalho {
+    padding: 0 20px;
+}
+
+.cabecalho img {
+    width: 200px;
+}
+
+.login-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.login-cabecalho img {
+    margin-bottom: 15px;
+}
+
+.login-cabecalho h1 {
+    font-size: 1.5em;
+}
+
+.login-cabecalho p {
+    font-size: 1em;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo label {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.campo input {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    padding: 0 20px;
+
+    font-size: 1em;
+
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #00000050;
+    font-style: italic;
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.botao-olho {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    color: #00000050;
+}
+
+.botao-entrar {
+    width: 80%;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #7834ff 0%, #5625b8 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(100, 23, 189, 0.4);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    transition: transform 1s;
+
+    align-self: center;
+}
+
+.botao-entrar:hover {
+    cursor: pointer;
+
+    background: linear-gradient(180deg, #662cd8 0%, #40198d 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(134, 63, 226, 0.5);
+}
+
+/* BOTÃO GOOGLE */
+
+.botao-google {
+    width: 75%;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    gap: 20px;
+
+    transition: transform 1s;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-weight: 600;
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.botao-google img {
+    width: 30px;
+    height: 35px;
+}
+
+.navegacao {
+    color: var(--branco);
+    font-size: 1.2em;
+}
+
+.ou {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--branco);
+}
+
+.cabecalho img {
+    margin-top: 25px;
+}
+
+
+.navegacao p {
+    text-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.campo1 {
+    margin-top: 40px;
+}
+
+
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --cor-destaque: #2FD6CB;
+    --fundos: #9EA9BD;
+    --textos-paginas: #535353;
+    --cor-bordas: #CCCCCC;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: "Montserrat", sans-serif; 
+ 
+}
+
+.cabecalho {
+    display: flex;
+    /* flex direction; */
+    /* Por padrão o Flex vem na direção Row/Linha */
+
+    /* Alinha no sentido do Flex */
+    justify-content: space-between;
+
+    /* Alinha no sentido contrário do Flex */
+    align-items: center;
+
+    padding: 0 120px;
+
+    height: 10vh; /* 10% da visualização vertical do dispositivo/navegador */
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+    .login {
+        width: 65%;
+
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .login-cabecalho img {
+        display: none;
+    }
+
+    .login {
+        width: 75%;
+        padding: 35px 40px 30px 40px;
+        transform: translateY(20px);
+
+        font-size: 0.9em;
+    }
+
+    .campo1 {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    .conteudo {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .cabecalho img {
+        height: 40px;
+    }
+
+    .login-cabecalho img {
+        display: none;
+
+    }
+
+    header {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .login {
+        width: 90%;
+        height: 10;
+        font-size: 0.8em;
+        padding: 35px 40px 30px 40px;
+        transform: translateY(20px);
+
+    }
+
+    .login img {
+        height: 80px;
+    }
+
+    .botao-entrar {
+        width: 100%;
+    }
+
+    .botao-google {
+        height: 50px;
+        width: 100%;
+    }
+
+    .campo1 {
+        margin-top: 10px;
+    }
+
+    .campo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    
+
+    .login {
+        width: 95%;
+        font-size: 0.7em;
+        padding: 35px 40px 30px 40px;
+        transform: translateY(20px);
+
+    }
+
+    .login-cabecalho img {
+        display: none;
+    }
+
+    .login img {
+        height: 60px;
+    }
+
+    .cabecalho img {
+        width: 150px;
+    }
+
+    .navegacao p {
+        font-size: 0.8em;
+    }
+
+    header {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .campo {
+        width: 100%;
+    }
+}
