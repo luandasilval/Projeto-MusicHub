@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Login</title>
+    <link rel="stylesheet" href="loginUsuario.css">
+    <link rel="shortcut icon" href="../ImgLoginUsuario/Logo MusicHub 2.svg" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="#">
+            <img src="../ImgLoginUsuario/Logo MusicHub (1).svg" alt="Logo do site do MusicHub">
+        </a>
+
+        <nav class="navegacao">
+            <p>Inscrever-se</p>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="login"> 
+            <div class="login-cabecalho">
+                <img src="../ImgLoginUsuario/Logo MusicHub 2.svg" alt="Logo MusicHub">
+                <h1>Bem vindo(a) de volta ao MusicHub</h1>
+                <p>Acesse a sua conta para poder continuar</p>
+            </div>
+
+            <form>
+                <div class="campo1">
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Ex: JoaoSilva@gmail.com">
+                </div>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Senha</label>
+
+                    <div class="campo-senha">
+                        <input type="password" id="senha" placeholder="********">
+                        <button type="button" id="mostrar-senha" class="botao-olho">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye">
+                                <path
+                                    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="botao-entrar">Entrar</button>
+                <p class="ou">Ou</p>
+                <button class="botao-google">
+                    <img src="../ImgLoginUsuario/Icone-Google.svg" alt="Logo da google">Entrar com Google
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="loginUsuario.js"></script>
+</body>
+</html>
