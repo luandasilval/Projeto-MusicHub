@@ -1,0 +1,341 @@
+/* main */
+
+body {
+    height: 100vh;
+
+    background: radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent) #05070c;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 100px 0 100px;
+
+    width: 100%;
+
+
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(20px);
+
+}
+
+.conteudo {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo img {
+
+    height: 110px;
+
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #000000;
+
+    width: 50%;
+
+    border-radius: 25px;
+
+    padding: 50px 100px 50px 100px;
+
+    gap: 20px;
+
+}
+
+/* CABEÇALHO DO LOGIN */
+
+.cabecalho img {
+    margin-top: 5px;
+    width: 200px;
+
+}
+
+.cadastro-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.cadastro-cabecalho img {
+    margin-bottom: 15px;
+}
+
+.cadastro-cabecalho h1 {
+    font-size: 2em;
+}
+
+.cadastro-cabecalho p {
+    font-size: 1.3em;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo label {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.campo input {
+    width: 100%;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    padding: 0 15px;
+
+    font-size: 0.9em;
+
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #00000050;
+    font-style: italic;
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.botao-olho {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    color: #00000050;
+}
+
+.botao-entrar {
+    width: 80%;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #7834ff 0%, #5625b8 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(100, 23, 189, 0.4);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    align-self: center;
+
+    transition: transform 1s;
+}
+
+.botao-entrar:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #662cd8 0%, #40198d 100%);
+    box-shadow: 0 6px 16px rgba(134, 63, 226, 0.5);
+    transform: translateY(-5px);
+}
+
+/* BOTÃO GOOGLE */
+
+.botao-google {
+    width: 75%;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    gap: 20px;
+
+    transition: transform 1s;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-weight: 600;
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.botao-google img {
+    width: 30px;
+    height: 35px;
+}
+
+.navegacao {
+    color: var(--branco);
+    font-size: 1.2em;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login span {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
+}
+
+
+.ou {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--branco);
+    transform: translateY(-5px);
+}
+
+
+.campo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.campo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.campo-checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.campo-checkbox input {
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.termos {
+    color: #551A8B;
+    cursor: pointer;
+}
+
+.campo1 .campo,
+.campo2 .campo {
+    flex: 1 1 350px;
+
+}
+
+.campo1,
+.campo2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --cor-destaque: #2FD6CB;
+    --fundos: #9EA9BD;
+    --textos-paginas: #535353;
+    --cor-bordas: #CCCCCC;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: "Montserrat", sans-serif; 
+ 
+}
+
+.cabecalho {
+    display: flex;
+    /* flex direction; */
+    /* Por padrão o Flex vem na direção Row/Linha */
+
+    /* Alinha no sentido do Flex */
+    justify-content: space-between;
+
+    /* Alinha no sentido contrário do Flex */
+    align-items: center;
+
+    padding: 0 120px;
+
+    height: 10vh;
+}
