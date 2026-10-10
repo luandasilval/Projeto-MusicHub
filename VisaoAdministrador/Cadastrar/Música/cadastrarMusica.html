@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Cadastrar músicas</title>
+
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="cadastrarMusica.css">
+</head>
+
+<body>
+
+    <!-- cabecalho e barra de nav -->
+    <header class="cabecalho">
+        <a href="#" class="logo-marca">
+            <img src="../../../ImgsVisaoAdministrador/Group (1).svg" alt="MusicHub Logo"
+                class="imagem-logo-cabecalho">
+            <span class="texto-marca">MusicHub</span>
+        </a>
+    </header>
+
+    <!-- retangulo principal -->
+    <main class="area-principal">
+        <div class="cartao-cadastro">
+
+            <!-- logo Central -->
+            <div class="caixinha-logo-centro">
+                <img src="../../../ImgsVisaoAdministrador/Group (1).svg" alt="MusicHub Logo"
+                    class="imagem-logo-principal">
+            </div>
+
+            <h1 class="titulo-cartao">Cadastre aqui uma nova música</h1>
+            <p class="subtitulo-cartao">Espalhe os melhores hits pelo mundo</p>
+
+            <!-- principal -->
+            <form class="formulario-cadastro">
+                <div class="formulario">
+
+                    <!-- Nome da musica -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="nome-musica">Nome da música</label>
+                        <input type="text" id="nome-musica" class="caixa-texto" placeholder="Ex. Evidências">
+                    </div>
+
+                    <!-- Letra da musica -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="letra-musica">Letra da música</label>
+                        <input type="text" id="letra-musica" class="caixa-texto" placeholder="Cole ou digite a letra aqui...">
+                    </div>
+
+                    <!-- Associar ao artista -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="associar-artista">Associar ao artista</label>
+                        <input type="text" id="associar-artista" class="caixa-texto" placeholder="Ex. Chitãozinho & Xororó">
+                    </div>
+
+                    <!-- Codigo da musica -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="codigo-musica">Código de música</label>
+                        <div class="caixinha-senha">
+                            <input type="text" id="codigo-musica" class="caixa-texto" placeholder="Ex. MUS-00123">
+                        </div>
+                    </div>
+
+                 
+                    <div class="input-texto largura-total">
+                        <label class="rotulo-campo" for="informacao-adicional">Informação adicional sobre a música</label>
+                        <input type="text" id="informacao-adicional" class="caixa-texto"
+                            placeholder="Ex. Gênero, ano de lançamento...">
+                    </div>
+
+                </div>
+
+                <!-- Termos e Condicoes -->
+                <div class="caixinha-termos">
+                    <input type="checkbox" id="caixa-termos" class="caixa-selecao" required>
+                    <label for="caixa-termos" class="rotulo-termos">
+                        Eu li e concordo com os <span class="destaque-termos">Termos de uso</span> e <span
+                            class="destaque-termos">Política de privacidade</span> do MusicHub
+                    </label>
+                </div>
+
+                <button type="submit" class="botao-cadastrar">
+                    Cadastrar
+                </button>
+            </form>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

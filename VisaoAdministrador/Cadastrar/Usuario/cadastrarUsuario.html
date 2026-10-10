@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Cadastrar usuário</title>
+
+    <!-- Ícone olho senha (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="cadastrarUsuario.css">
+</head>
+
+<body>
+
+    <!-- cabecalho e barra de nav -->
+    <header class="cabecalho">
+        <a href="#" class="logo-marca">
+            <img src="../../../ImgsVisaoAdministrador/Group (1).svg" alt="MusicHub Logo" class="imagem-logo-cabecalho">
+            <span class="texto-marca">MusicHub</span>
+        </a>
+    </header>
+
+    <!-- retangulo principal -->
+    <main class="area-principal">
+        <div class="cartao-cadastro">
+
+            <!-- logo Central -->
+            <div class="caixinha-logo-centro">
+                <img src="../../../ImgsVisaoAdministrador/Group (1).svg" alt="MusicHub Logo"
+                    class="imagem-logo-principal">
+            </div>
+
+            <h1 class="titulo-cartao">Cadastre aqui um novo usuário</h1>
+            <p class="subtitulo-cartao">Espalhe os melhores hits pelo mundo</p>
+
+            <!-- principal -->
+            <form class="formulario-cadastro">
+                <div class="formulario">
+
+                    <!-- nome do usuario -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="nome-artista">Nome do usuário</label>
+                        <input type="text" id="nome-artista" class="caixa-texto" placeholder="Ex. João Silva">
+                    </div>
+
+                    <!-- e-mail -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="email-artista">E-mail</label>
+                        <input type="email" id="email-artista" class="caixa-texto"
+                            placeholder="Ex. joaosilva@gmail.com">
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="senha-usuario">Senha</label>
+                        <div class="caixinha-senha">
+                            <input type="password" id="senha-usuario" class="caixa-texto"
+                                placeholder="Digite sua senha">
+                            <button type="button" class="botao-ocultar-senha" aria-label="Mostrar/Esconder senha">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Confirmar Senha -->
+                    <div class="input-texto">
+                        <label class="rotulo-campo" for="confirmar-senha-usuario">Confirmar senha</label>
+                        <div class="caixinha-senha">
+                            <input type="password" id="confirmar-senha-usuario" class="caixa-texto"
+                                placeholder="Confirme sua senha">
+                            <button type="button" class="botao-ocultar-senha" aria-label="Mostrar/Esconder senha">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                        <span class="texto-ajuda">A senha será enviada ao usuário</span>
+                    </div>
+
+                    <!-- Informação adicional -->
+                    <div class="input-texto largura-total">
+                        <label class="rotulo-campo" for="informacao-adicional">Informação adicional sobre o
+                            usuário</label>
+                        <input type="text" id="informacao-adicional" class="caixa-texto"
+                            placeholder="Ex. Gosto musical, idade...">
+                    </div>
+
+                </div>
+
+                <!-- Termos e Condicoes -->
+                <div class="caixinha-termos">
+                    <input type="checkbox" id="caixa-termos" class="caixa-selecao" required>
+                    <label for="caixa-termos" class="rotulo-termos">
+                        Eu li e concordo com os <span class="destaque-termos">Termos de uso</span> e <span
+                            class="destaque-termos">Política de privacidade</span> do MusicHub
+                    </label>
+                </div>
+
+                <button type="submit" class="botao-cadastrar">
+                    Cadastrar
+                </button>
+            </form>
+
+        </div>
+    </main>
+    <script src="cadastrarUsuario.js"></script>
+</body>
+
+</html>
