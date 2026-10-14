@@ -316,3 +316,13 @@ body {
     max-width: 100%;
   }
 }
+
+
+.caixa-texto.campo-erro {
+  border-color: #ff4d4d !important;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.25) !important;
+}
+
+.caixa-texto {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
