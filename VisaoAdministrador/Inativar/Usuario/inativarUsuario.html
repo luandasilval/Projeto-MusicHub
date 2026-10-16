@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Inativar usuários</title>
+
+    <link rel="stylesheet" href="usuarios.css">
+</head>
+
+<body>
+
+    <!-- cabecalho e barra de nav -->
+    <header class="cabecalho">
+        <a href="#" class="logo-marca">
+            <img src="../../imgs/ad35a714-13a4-45ea-b131-c7d58485ca61 4.png" alt="MusicHub Logo"
+                class="imagem-logo-cabecalho">
+            <span class="texto-marca">MusicHub</span>
+        </a>
+    </header>
+
+    <!-- retangulo principal -->
+    <main class="area-principal">
+        <div class="cartao-cadastro">
+
+            <!-- logo Central -->
+            <div class="caixinha-logo-centro">
+                <img src="../../imgs/ad35a714-13a4-45ea-b131-c7d58485ca61 4.png" alt="MusicHub Logo"
+                    class="imagem-logo-principal">
+            </div>
+
+            <h1 class="titulo-cartao">Realmente deseja inativar este usuário?</h1>
+            <p class="subtitulo-cartao">Essa ação não poderá ser desfeita futuramente</p>
+
+            <!-- principal -->
+            <div class="formulario">
+
+              
+                <div class="input-texto largura-total">
+                    <label class="rotulo-campo" for="informacao-adicional">Justifique aqui o motivo da inativação do
+                        usuário</label>
+                    <input type="text" id="informacao-adicional" class="caixa-texto"
+                        placeholder="Ex. Não cumpriu as diretrizes...">
+                </div>
+
+                <div class="input-texto largura-total">
+                    <label class="rotulo-campo" for="tempo-inativacao">Qual o tempo de inativação?</label>
+                    <input type="text" id="tempo-inativacao" class="caixa-texto" placeholder="Ex. 15 dias">
+                </div>
+
+            </div>
+
+           
+            <div class="texto-informativo">
+                <p>
+                    Ao selecionar a opção de inativação, você inativará temporariamente o usuário selecionado do
+                    sistema. Essa ação é irreversível e não poderá ser desfeita futuramente, respeitando o prazo que você
+                    selecionar.
+                </p>
+                <p>
+                    Após esse prazo, o usuário poderá retornar ao site e utilizá-lo sem limitações novamente.
+                </p>
+                <p>
+                    O usuário será notificado da inativação e do motivo.
+                </p>
+            </div>
+
+         
+            <div class="caixinha-termos">
+                <input type="checkbox" id="caixa-termos" class="caixa-selecao" required>
+                <label for="caixa-termos" class="rotulo-termos">
+                    Eu li e concordo com os <span class="destaque-termos">Termos de uso</span> e <span
+                        class="destaque-termos">Política de privacidade</span> do MusicHub
+                </label>
+            </div>
+
+            <button type="submit" class="botao-cadastrar">
+                Confirmar alterações
+            </button>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
