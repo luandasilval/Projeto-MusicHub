@@ -60,37 +60,53 @@ body {
   box-shadow: 0 0 40px rgba(70, 100, 200, 0.25);
 }
 
-.barra-busca {
-  position: relative;
+/* Container do topo com Busca e Botão */
+.topo-acoes {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   margin-bottom: 30px;
 }
 
-.icone-busca {
-  position: absolute;
-  left: calc(50% - 118px);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  pointer-events: none;
+.barra-busca {
+  position: relative;
+  flex: 1;
+  display: flex;
 }
 
 .campo-busca {
   width: 100%;
-  max-width: 260px;
-  padding: 7px 16px 7px 32px;
+  padding: 10px 16px;
   border: none;
-  border-radius: 14px;
+  border-radius: 12px;
   background-color: #eef0f5;
   color: #4d5062;
-  font-size: 12px;
+  font-size: 13px;
   outline: none;
 }
 
 .campo-busca::placeholder {
   color: #75798a;
+}
+
+/* Botão Adicionar Usuário */
+.botao-adicionar {
+  background: linear-gradient(180deg, #7834ff 0%, #5625b8 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(100, 23, 189, 0.4);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+}
+
+.botao-adicionar:hover {
+  background: linear-gradient(180deg, #662cd8 0%, #40198d 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(134, 63, 226, 0.5);
 }
 
 .tabela-usuarios {
@@ -195,6 +211,11 @@ body {
 @media (max-width: 480px) {
   .painel {
     padding: 24px 16px 16px;
+  }
+
+  .topo-acoes {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .linha-cabecalho,

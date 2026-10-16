@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicHub - Listar Músicas</title>
+
+    <!-- Ícone de + para o botão de adicionar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="listarMusica.css">
 </head>
 
@@ -21,8 +24,14 @@
 
     <main class="painel">
 
-        <div class="barra-busca">
-            <input type="text" class="campo-busca" placeholder="Busque por artista ou nome">
+        <!-- Barra de topo com Busca e Botão Adicionar -->
+        <div class="topo-acoes">
+            <div class="barra-busca">
+                <input type="text" class="campo-busca" placeholder="Busque por artista ou nome">
+            </div>
+            <a href="cadastrarMusica.html" class="botao botao-adicionar">
+                <i class="fa-solid fa-plus"></i> Adicionar Música
+            </a>
         </div>
 
         <div class="tabela-usuarios">
@@ -98,101 +107,11 @@
                 </div>
             </div>
 
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">Música tal</span>
-                    <span class="data-edicao">Publicada em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar Música</button>
-                </div>
-            </div>
-
         </div>
 
     </main>
 
+    <script src="listarMusica.js"></script>
 </body>
 
 </html>

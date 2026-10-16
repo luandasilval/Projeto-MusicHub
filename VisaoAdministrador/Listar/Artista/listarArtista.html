@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicHub - Listar Artistas</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="listarArtista.css">
 </head>
 
 <body>
 
-    <!-- cabecalho e barra de nav -->
+    <!-- Cabeçalho e barra de navegação -->
     <header class="cabecalho">
         <a href="#" class="logo-marca">
-            <img src="../../../ImgsVisaoAdministrador/Group (1).svg" alt="MusicHub Logo"
-                class="imagem-logo-cabecalho">
+            <img src="../../../ImgsVisaoAdministrador/Group (1).svg" alt="MusicHub Logo" class="imagem-logo-cabecalho">
             <span class="texto-marca">MusicHub</span>
         </a>
     </header>
 
     <main class="painel">
 
-        <div class="barra-busca">
-            <input type="text" class="campo-busca" placeholder="Busque por e-mail ou nome">
+        <!-- Barra Superior: Busca + Botão Adicionar Artista -->
+        <div class="topo-acoes">
+            <div class="barra-busca">
+                <input type="text" class="campo-busca" placeholder="Busque por e-mail ou nome">
+            </div>
+            <a href="../../Cadastrar/Artista/cadastrarArtista.html" class="botao botao-adicionar">
+                <i class="fa-solid fa-plus"></i> Adicionar Artista
+            </a>
         </div>
 
         <div class="tabela-usuarios">
@@ -33,6 +40,7 @@
                 <span class="coluna-titulo coluna-edicao">Edição</span>
             </div>
 
+            <!-- Linha Exemplo 1 -->
             <div class="linha-usuario">
                 <div class="info-usuario">
                     <span class="nome-usuario">João Silva</span>
@@ -42,157 +50,41 @@
                     <button class="botao botao-inativar">Inativar/excluir</button>
                 </div>
                 <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
+                    <a href="../../Editar/Artista/editarArtista.html" class="botao botao-editar">Editar artista</a>
                 </div>
             </div>
 
+            <!-- Linha Exemplo 2 -->
             <div class="linha-usuario">
                 <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
+                    <span class="nome-usuario">Maria Oliveira</span>
                     <span class="data-edicao">Editado em 27/09/2026</span>
                 </div>
                 <div class="acao">
                     <button class="botao botao-inativar">Inativar/excluir</button>
                 </div>
                 <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
+                    <a href="../../Editar/Artista/editarArtista.html" class="botao botao-editar">Editar artista</a>
                 </div>
             </div>
 
+            <!-- Linha Exemplo 3 -->
             <div class="linha-usuario">
                 <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
+                    <span class="nome-usuario">Carlos Eduardo</span>
                     <span class="data-edicao">Editado em 27/09/2026</span>
                 </div>
                 <div class="acao">
                     <button class="botao botao-inativar">Inativar/excluir</button>
                 </div>
                 <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
-                </div>
-            </div>
-
-            <div class="linha-usuario">
-                <div class="info-usuario">
-                    <span class="nome-usuario">João Silva</span>
-                    <span class="data-edicao">Editado em 27/09/2026</span>
-                </div>
-                <div class="acao">
-                    <button class="botao botao-inativar">Inativar/excluir</button>
-                </div>
-                <div class="edicao">
-                    <button class="botao botao-editar">Editar usuário</button>
+                    <a href="../../Editar/Artista/editarArtista.html" class="botao botao-editar">Editar artista</a>
                 </div>
             </div>
 
         </div>
 
     </main>
-  <script src="listarArtista.js"></script>
-</body>
 
-</html>
+    <script src="listarArtista.js"></script>
+    

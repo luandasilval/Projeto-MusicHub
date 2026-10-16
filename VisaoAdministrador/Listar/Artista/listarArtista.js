@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         botao.addEventListener('click', (e) => {
             const linhaAtual = e.target.closest('.linha-usuario');
             const nomeArtista = linhaAtual.querySelector('.nome-usuario')?.textContent || '';
-
-
-            alert(`Iniciando edição para: ${nomeArtista}`);
         });
     });
 });
